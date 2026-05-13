@@ -8,7 +8,10 @@ Enfoque: Navegación asistida y lenguaje ultra-sencillo.
 
 ### P1. INICIO (Home)
 - **Foco:** Motivación y Contexto Local.
-- **Elementos Clave:** Referencia a la Urbanización El Bosque y logos UPTOS.
+- **Elementos Clave:** 
+    1. Hero: "Cuida tu seguridad digital".
+    2. Nuestra Comunidad: Sección de contexto geográfico e histórico de El Bosque (NUEVO).
+    3. "¿Por qué es importante este proyecto?": Motivación académica de los estudiantes UPTOS.
 - **Acción:** Botón "Comienza a aprender aquí".
 
 ### P2. ¿QUÉ ES EL PHISHING? (Conceptos)
