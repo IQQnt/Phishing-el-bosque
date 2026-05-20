@@ -15,6 +15,7 @@
                         muted: '#69818d',
                         pearl: '#afb3b7',
                         bone: '#F9FAFB',
+                        accent: '#e6a157',
                     }
                 }
             }
@@ -25,7 +26,7 @@
         body { font-family: 'Outfit', sans-serif; }
     </style>
 </head>
-<body class="bg-bone text-gray-800">
+<body class="bg-gray-50 text-gray-800">
 
     <!-- Navegación Fija -->
     <nav class="bg-navy-800 text-white sticky top-0 z-50 shadow-lg">
@@ -53,10 +54,10 @@
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto px-4 py-12 lg:py-20">
+    <main class="max-w-6xl mx-auto px-4 py-16">
         <header class="mb-16 text-center max-w-3xl mx-auto">
-            <h1 class="text-4xl lg:text-5xl font-bold text-navy-900 mb-6">
-                Así te pueden estafar: <br>
+            <h1 class="text-4xl lg:text-5xl font-bold tracking-tight leading-tight text-navy-900 mb-6">
+                ⚠️ Así te pueden estafar: <br>
             </h1>
             <p class="text-xl text-muted">Aprender a reconocer estos mensajes te salvará de muchos problemas. Analicemos cómo intentan engañarnos.</p>
         </header>
@@ -64,13 +65,13 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
             
             <!-- Ejemplo 1: Banco -->
-            <article class="bg-white rounded-2xl shadow-md overflow-hidden border border-pearl">
+            <article class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-100">
                 <div class="bg-blue-600 text-white p-4 font-bold">WhatsApp del "Banco"</div>
                 <div class="p-8">
                     <div class="bg-gray-100 p-4 rounded-lg italic text-gray-700 mb-6 border-l-4 border-blue-500">
                         "Estimado cliente, su cuenta ha sido suspendida por seguridad. Ingrese a www.banco-ve-seguro.com para reactivarla ahora mismo."
                     </div>
-                    <h3 class="font-bold text-navy-900 mb-4">Identifica el engaño:</h3>
+                    <h3 class="font-bold tracking-tight text-navy-900 mb-4">Identifica el engaño:</h3>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-2">🔘 El enlace no es el oficial del banco.</li>
                         <li class="flex items-start gap-2">🔘 Usa el miedo para que actúes rápido.</li>
@@ -80,13 +81,13 @@
             </article>
 
             <!-- Ejemplo 2: MercadoLibre -->
-            <article class="bg-white rounded-2xl shadow-md overflow-hidden border border-pearl">
+            <article class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-100">
                 <div class="bg-yellow-500 text-navy-900 p-4 font-bold">Correo de MercadoLibre</div>
                 <div class="p-8">
                     <div class="bg-gray-100 p-4 rounded-lg italic text-gray-700 mb-6 border-l-4 border-yellow-500">
                         "¡Felicidades! Ganaste un iPhone 15 por ser un usuario destacado. Paga solo el envío aquí: bit.ly/premio-ya"
                     </div>
-                    <h3 class="font-bold text-navy-900 mb-4">Identifica el engaño:</h3>
+                    <h3 class="font-bold tracking-tight text-navy-900 mb-4">Identifica el engaño:</h3>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-2">🔘 Nadie regala celulares así de fácil.</li>
                         <li class="flex items-start gap-2">🔘 El enlace está acortado (oculta el destino).</li>
@@ -96,13 +97,13 @@
             </article>
 
             <!-- Ejemplo 3: CANTV -->
-            <article class="bg-white rounded-2xl shadow-md overflow-hidden border border-pearl">
+            <article class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-100">
                 <div class="bg-red-700 text-white p-4 font-bold">Llamada de "Cantv"</div>
                 <div class="p-8">
                     <div class="bg-gray-100 p-4 rounded-lg italic text-gray-700 mb-6 border-l-4 border-red-700">
                         "Le hablamos de Cantv. Para evitar el corte de su servicio de internet, por favor dígame el código que le llegó a su celular por SMS."
                     </div>
-                    <h3 class="font-bold text-navy-900 mb-4">Identifica el engaño:</h3>
+                    <h3 class="font-bold tracking-tight text-navy-900 mb-4">Identifica el engaño:</h3>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-2">🔘 Te piden un código SMS (es para robar tu cuenta).</li>
                         <li class="flex items-start gap-2">🔘 Te amenazan con cortar el servicio.</li>
@@ -112,13 +113,13 @@
             </article>
 
             <!-- Ejemplo 4: Familiar -->
-            <article class="bg-white rounded-2xl shadow-md overflow-hidden border border-pearl">
+            <article class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-100">
                 <div class="bg-green-600 text-white p-4 font-bold">El "Familiar" en apuros</div>
                 <div class="p-8">
                     <div class="bg-gray-100 p-4 rounded-lg italic text-gray-700 mb-6 border-l-4 border-green-600">
                         "Hola tío, soy yo. Cambié de número. Estoy en el aeropuerto y mi maleta está retenida, ¿me puedes prestar 50$ para pagar la multa?"
                     </div>
-                    <h3 class="font-bold text-navy-900 mb-4">Identifica el engaño:</h3>
+                    <h3 class="font-bold tracking-tight text-navy-900 mb-4">Identifica el engaño:</h3>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-2">🔘 Un número nuevo que no conoces.</li>
                         <li class="flex items-start gap-2">🔘 Pide dinero con una historia urgente.</li>
@@ -130,14 +131,14 @@
         </div>
 
         <div class="text-center">
-            <a href="prevenir.html" class="inline-block bg-trust text-white text-xl font-bold py-5 px-12 rounded-full shadow-xl transition transform hover:scale-105 active:scale-95">
+            <a href="prevenir.html" class="inline-block bg-accent hover:bg-amber-600 text-white text-xl font-bold py-5 px-12 rounded-full shadow-md hover:shadow-lg transition-all transform active:scale-95">
                 Aprende cómo prevenir esto &rarr;
             </a>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-navy-900 text-white py-12 px-4 mt-16 border-t-4 border-pearl">
+    <footer class="bg-navy-900 text-white py-12 px-4 mt-16 border-t border-accent/30">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
                 <h4 class="text-xl font-bold mb-4 italic text-pearl">UPTOS "Clodosbaldo Russián"</h4>

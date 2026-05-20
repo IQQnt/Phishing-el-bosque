@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,7 @@
                         muted: '#69818d',
                         pearl: '#afb3b7',
                         bone: '#F9FAFB',
+                        accent: '#e6a157',
                     }
                 }
             }
@@ -25,10 +27,14 @@
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
-        body { font-family: 'Outfit', sans-serif; }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
     </style>
 </head>
-<body class="bg-bone text-gray-800">
+
+<body class="bg-gray-50 text-gray-800">
 
     <!-- Navegación Fija -->
     <nav class="bg-navy-800 text-white sticky top-0 z-50 shadow-lg">
@@ -38,7 +44,7 @@
                 <span class="hidden sm:inline">Seguridad Digital El Bosque</span>
                 <span class="sm:hidden text-sm">Seguridad Digital</span>
             </a>
-            
+
             <!-- Menú Desktop -->
             <div class="hidden lg:flex space-x-6 font-medium">
                 <a href="index.html" class="text-white border-b-2 border-white pb-1">Inicio</a>
@@ -50,7 +56,10 @@
 
             <!-- Botón Hamburguesa -->
             <button id="menu-btn" class="lg:hidden p-2 focus:outline-none">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
             </button>
         </div>
 
@@ -65,87 +74,119 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-white border-b border-pearl">
-        <div class="max-w-6xl mx-auto px-4 py-16 lg:py-24 flex flex-col items-start">
-            <h1 class="text-4xl lg:text-6xl font-bold text-navy-900 leading-tight mb-6">
+    <header class="bg-gradient-to-br from-white via-gray-50 to-gray-100 border-b border-pearl">
+        <div class="max-w-6xl mx-auto px-4 py-20 lg:py-28 flex flex-col items-start">
+            <h1 class="text-4xl lg:text-6xl font-bold tracking-tight leading-tight text-navy-900 mb-6">
                 Cuida tu seguridad digital: <br>
                 <span class="text-trust">Aprende a identificar y evitar el phishing</span>
             </h1>
             <p class="text-xl lg:text-2xl text-muted mb-8 max-w-3xl">
-                Información clara y práctica para los residentes de la 
+                Información clara y práctica para los residentes de la
                 <span class="font-bold text-navy-800">Urbanización El Bosque</span>, Cumaná, Estado Sucre.
             </p>
-            <a href="phishing.html" class="w-full sm:w-auto bg-trust hover:bg-navy-800 text-white text-xl font-bold py-5 px-10 rounded-lg shadow-lg transition transform active:scale-95 text-center">
+            <a href="phishing.html"
+                class="w-full sm:w-auto bg-accent hover:bg-amber-600 text-white text-xl font-bold py-5 px-10 rounded-lg shadow-md hover:shadow-lg transition-all transform active:scale-95 text-center">
                 Comienza a aprender aquí
             </a>
         </div>
     </header>
 
     <!-- Sección Nuestra Comunidad -->
-    <section class="max-w-6xl mx-auto px-4 py-16">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <!-- Columna de texto -->
-            <div>
-                <h2 class="text-3xl font-bold text-navy-900 mb-6">Nuestra Comunidad</h2>
-                <div class="space-y-4 text-gray-700 leading-relaxed">
-                    <p>
-                        La Urbanización El Bosque se encuentra ubicada en el nororiente de la ciudad de Cumaná, específicamente en la parroquia Valentín Valiente del municipio Sucre. Sus límites territoriales están definidos por el Mar Caribe al norte, la avenida Carúpano al sur, la avenida Gran Mariscal al este y la urbanización Villa Bella al oeste. Esta zona presenta características típicas de un desarrollo urbano planificado, con una distribución organizada en tres etapas constructivas claramente delimitadas.
-                    </p>
-                    <p>
-                        Actualmente, la urbanización El Bosque representa un ejemplo de desarrollo habitacional planificado en la región, combinando accesibilidad, servicios básicos y una ubicación cercana al mar Caribe. Su crecimiento ordenado a lo largo de tres etapas ha permitido albergar a familias de diversos orígenes, contribuyendo al desarrollo urbano de Cumaná y ofreciendo un espacio residencial consolidado dentro de la ciudad.
-                    </p>
+    <section class="bg-white py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Columna de texto -->
+                <div>
+                    <h2 class="text-3xl font-semibold tracking-tight text-navy-900 mb-6">🏘️ Nuestra Comunidad</h2>
+                    <div class="space-y-4 text-gray-700 leading-relaxed">
+                        <p>
+                            La Urbanización El Bosque se encuentra ubicada en el nororiente de la ciudad de Cumaná,
+                            específicamente en la parroquia Valentín Valiente del municipio Sucre. Sus límites
+                            territoriales
+                            están definidos por el Mar Caribe al norte, la avenida Carúpano al sur, la avenida Gran
+                            Mariscal
+                            al este y la urbanización Villa Bella al oeste. Esta zona presenta características típicas
+                            de un
+                            desarrollo urbano planificado, con una distribución organizada en tres etapas constructivas
+                            claramente delimitadas.
+                        </p>
+                        <p>
+                            Actualmente, la urbanización El Bosque representa un ejemplo de desarrollo habitacional
+                            planificado en la región, combinando accesibilidad, servicios básicos y una ubicación
+                            cercana al
+                            mar Caribe. Su crecimiento ordenado a lo largo de tres etapas ha permitido albergar a
+                            familias
+                            de diversos orígenes, contribuyendo al desarrollo urbano de Cumaná y ofreciendo un espacio
+                            residencial consolidado dentro de la ciudad.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Columna de imagen -->
-            <div class="flex justify-center lg:justify-end">
-                <img src="assets/images/Picture.png" alt="Ubicación de la Urbanización El Bosque, Cumaná" class="rounded-xl shadow-lg w-full max-w-md object-cover">
+
+                <!-- Columna de imagen -->
+                <div class="flex justify-center lg:justify-end">
+                    <img src="assets/images/Picture.png" alt="Ubicación de la Urbanización El Bosque, Cumaná"
+                        class="rounded-xl shadow-lg w-full max-w-md object-cover">
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Sección Introductoria -->
     <main class="max-w-4xl mx-auto px-4 py-16 text-center">
-        <h2 class="text-3xl font-bold text-navy-900 mb-8">¿Por qué es importante este proyecto?</h2>
+        <h2 class="text-3xl font-semibold tracking-tight text-navy-900 mb-8">🛡️ ¿Por qué es importante este proyecto?
+        </h2>
         <div class="space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
-                Somos estudiantes de la <strong>Universidad Politécnica Territorial del Oeste de Sucre "Clodosbaldo Russián" (UPTOS)</strong>. Como parte de nuestro proyecto comunitario, queremos ayudarte a navegar por internet sin miedo.
+                Somos estudiantes de la <strong>Universidad Politécnica Territorial del Oeste de Sucre "Clodosbaldo
+                    Russián" (UPTOS)</strong>. Como parte de nuestro proyecto comunitario, queremos ayudarte a navegar
+                por internet sin miedo.
             </p>
             <p>
-                En Venezuela, los intentos de estafa a través de WhatsApp y correos electrónicos han aumentado. Muchos de nuestros vecinos han sido víctimas de engaños que buscan robar su dinero o sus contactos.
+                En Venezuela, los intentos de estafa a través de WhatsApp y correos electrónicos han aumentado. Muchos
+                de nuestros vecinos han sido víctimas de engaños que buscan robar su dinero o sus contactos.
             </p>
             <p>
-                Este sitio web ha sido creado para darte las herramientas necesarias para detectar estos engaños a tiempo. La seguridad digital no es solo para expertos; es para todos nosotros.
+                Este sitio web ha sido creado para darte las herramientas necesarias para detectar estos engaños a
+                tiempo. La seguridad digital no es solo para expertos; es para todos nosotros.
             </p>
         </div>
     </main>
 
     <!-- Tarjetas de Resumen -->
-    <section class="bg-gray-100 py-16 px-4">
+    <section class="bg-white py-16 px-4">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Card 1 -->
-            <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-trust">
-                <h3 class="text-2xl font-bold text-navy-900 mb-4">¿Qué es?</h3>
-                <p class="text-gray-600 mb-6 leading-relaxed">Entiende de forma sencilla cómo funcionan estas estafas digitales que parecen "pescar" tus datos.</p>
-                <a href="phishing.html" class="text-trust font-bold hover:underline">Saber más &rarr;</a>
+            <div
+                class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
+                <h3 class="text-2xl font-bold tracking-tight text-navy-900 mb-4">¿Qué es?</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">Entiende de forma sencilla cómo funcionan estas estafas
+                    digitales que parecen "pescar" tus datos.</p>
+                <a href="phishing.html" class="text-accent hover:text-amber-600 font-medium transition-colors">Saber más
+                    &rarr;</a>
             </div>
             <!-- Card 2 -->
-            <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-trust">
-                <h3 class="text-2xl font-bold text-navy-900 mb-4">Ejemplos Reales</h3>
-                <p class="text-gray-600 mb-6 leading-relaxed">Mira cómo se ven los mensajes falsos de bancos y familiares que circulan en Venezuela.</p>
-                <a href="ejemplos.html" class="text-trust font-bold hover:underline">Ver ejemplos &rarr;</a>
+            <div
+                class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
+                <h3 class="text-2xl font-bold tracking-tight text-navy-900 mb-4">Ejemplos Reales</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">Mira cómo se ven los mensajes falsos de bancos y
+                    familiares que circulan en Venezuela.</p>
+                <a href="ejemplos.html" class="text-accent hover:text-amber-600 font-medium transition-colors">Ver
+                    ejemplos &rarr;</a>
             </div>
             <!-- Card 3 -->
-            <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-trust">
-                <h3 class="text-2xl font-bold text-navy-900 mb-4">Cómo Prevenir</h3>
-                <p class="text-gray-600 mb-6 leading-relaxed">Sigue 7 pasos prácticos para convertirte en un experto en seguridad digital.</p>
-                <a href="prevenir.html" class="text-trust font-bold hover:underline">Aprender pasos &rarr;</a>
+            <div
+                class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
+                <h3 class="text-2xl font-bold tracking-tight text-navy-900 mb-4">Cómo Prevenir</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">Sigue 7 pasos prácticos para convertirte en un experto en
+                    seguridad digital.</p>
+                <a href="prevenir.html" class="text-accent hover:text-amber-600 font-medium transition-colors">Aprender
+                    pasos &rarr;</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-navy-900 text-white py-12 px-4 mt-16 border-t-4 border-pearl">
+    <footer class="bg-navy-900 text-white py-12 px-4 mt-16 border-t border-accent/30">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
                 <h4 class="text-xl font-bold mb-4 italic text-pearl">UPTOS "Clodosbaldo Russián"</h4>
@@ -171,10 +212,12 @@
     </footer>
 
     <!-- Botón Volver Arriba -->
-    <button id="back-to-top" class="hidden fixed bottom-6 right-6 bg-trust text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center text-2xl transition hover:bg-navy-800 z-40">
+    <button id="back-to-top"
+        class="hidden fixed bottom-6 right-6 bg-trust text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center text-2xl transition hover:bg-navy-800 z-40">
         ⇑
     </button>
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
