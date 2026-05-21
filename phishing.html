@@ -7,21 +7,28 @@
     <title>¿Qué es el phishing? | Seguridad Digital El Bosque</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
+                tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        navy: { 800: '#132e35', 900: '#0d1f23' },
-                        trust: '#2d4a53',
-                        muted: '#69818d',
-                        pearl: '#afb3b7',
-                        bone: '#F9FAFB',
-                        accent: '#e6a157',
+                        primary: {
+                            DEFAULT: '#3204D9',
+                            dark: '#090E25',
+                            light: '#5FD9CD',
+                            pale: '#9384FF',
+                        },
+                        background: '#F7F7F7',
+                        surface: '#FFFFFF',
+                        text: {
+                            primary: '#07113D',
+                            secondary: '#9384FF',
+                        },
+                        alert: '#DC2626',
                     }
                 }
             }
         }
-    </script>
+</script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
@@ -31,10 +38,10 @@
     </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-[#F7F7F7] text-[#090E25]" style="background-image: linear-gradient(to bottom right, #F7F7F7, rgba(95,217,205,0.08)), radial-gradient(circle at 2px 2px, rgba(95,217,205,0.125) 1px, transparent 1px); background-size: 32px 32px;">
 
     <!-- Navegación Fija -->
-    <nav class="bg-navy-800 text-white sticky top-0 z-50 shadow-lg">
+    <nav class="bg-[#07113D] text-white sticky top-0 z-50 shadow-lg">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="index.html" class="text-xl font-bold flex items-center gap-2">
                 <img src="assets/images/logoBosque.jpg" alt="Logo" class="h-8 w-8"> <span
@@ -47,83 +54,83 @@
                 </svg>
             </button>
             <div class="hidden lg:flex space-x-6 font-medium">
-                <a href="index.html" class="hover:text-pearl transition">Inicio</a>
+                <a href="index.html" class="hover:text-[#5E49F2] transition">Inicio</a>
                 <a href="phishing.html" class="text-white border-b-2 border-white pb-1">¿Qué es?</a>
-                <a href="ejemplos.html" class="hover:text-pearl transition">Ejemplos</a>
-                <a href="prevenir.html" class="hover:text-pearl transition">Cómo prevenir</a>
-                <a href="recursos.html" class="hover:text-pearl transition">Recursos</a>
+                <a href="ejemplos.html" class="hover:text-[#5E49F2] transition">Ejemplos</a>
+                <a href="prevenir.html" class="hover:text-[#5E49F2] transition">Cómo prevenir</a>
+                <a href="recursos.html" class="hover:text-[#5E49F2] transition">Recursos</a>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden lg:hidden bg-navy-900 px-4 py-6 border-t border-gray-700">
-            <a href="index.html" class="block py-2 text-gray-300">Inicio</a>
+        <div id="mobile-menu" class="hidden lg:hidden bg-[#07113D] px-4 py-6 border-t border-[#5FD9CD]/30">
+            <a href="index.html" class="block py-2 text-[#64748B]">Inicio</a>
             <a href="phishing.html" class="block py-2 text-white font-bold">¿Qué es phishing?</a>
-            <a href="ejemplos.html" class="block py-2 text-gray-300">Ejemplos reales</a>
-            <a href="prevenir.html" class="block py-2 text-gray-300">Pasos para prevenir</a>
-            <a href="recursos.html" class="block py-2 text-gray-300">Recursos útiles</a>
+            <a href="ejemplos.html" class="block py-2 text-[#64748B]">Ejemplos reales</a>
+            <a href="prevenir.html" class="block py-2 text-[#64748B]">Pasos para prevenir</a>
+            <a href="recursos.html" class="block py-2 text-[#64748B]">Recursos útiles</a>
         </div>
     </nav>
 
     <main class="max-w-4xl mx-auto px-4 py-16">
-        <h1 class="text-4xl lg:text-5xl font-bold tracking-tight leading-tight text-navy-900 mb-8">
+        <h1 class="text-4xl lg:text-5xl font-bold tracking-tight leading-tight text-[#07113D] mb-8">
             ¿Qué es el phishing? <br>
-            <span class="text-trust">No piques el anzuelo digital</span>
+            <span class="text-[#07113D]">No piques el anzuelo digital</span>
         </h1>
 
         <!-- Definición -->
-        <section class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 mb-16">
-            <h2 class="text-2xl font-semibold tracking-tight text-navy-800 mb-6 flex items-center gap-3">
+        <section class="bg-white p-8 rounded-2xl shadow-md border border-[#5FD9CD]/30 mb-16">
+            <h2 class="text-2xl font-semibold tracking-tight text-[#07113D] mb-6 flex items-center gap-3">
                 🎣 Una metáfora sencilla
             </h2>
-            <p class="text-xl leading-relaxed text-gray-700 mb-6">
+            <p class="text-xl leading-relaxed text-[#1E293B] mb-6">
                 Imagina que vas a pescar al río Cariaco. Lanzamos un anzuelo con carnada para que el pez muerda. En
                 internet, los estafadores hacen lo mismo: <strong>lanzan mensajes falsos</strong> para que tú "muerdas
                 el anzuelo" y les entregues tus datos.
             </p>
-            <p class="text-xl leading-relaxed text-gray-700">
+            <p class="text-xl leading-relaxed text-[#1E293B]">
                 El <strong>Phishing</strong> es cuando alguien finge ser una persona o empresa en la que confías (como
                 tu banco, un familiar o MercadoLibre) para robar tu información personal, claves o dinero.
             </p>
         </section>
 
         <!-- Señales de Alerta -->
-        <h2 class="text-3xl font-semibold tracking-tight text-navy-900 mb-8">🚩 5 señales de que un mensaje es falso</h2>
+        <h2 class="text-3xl font-semibold tracking-tight text-[#07113D] mb-8">🚩 5 señales de que un mensaje es falso</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-            <div class="bg-white p-6 rounded-2xl border border-gray-100 border-l-8 border-red-500 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-start gap-4">
+            <div class="bg-white p-6 rounded-2xl border border-[#5FD9CD]/30 border-l-8 border-[#F64F2E] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-start gap-4">
                 <div>
-                    <h3 class="font-bold tracking-tight text-navy-900 text-xl mb-1">Urgencia o miedo</h3>
-                    <p class="text-gray-600">Te dicen que tu cuenta será bloqueada "YA MISMO" si no haces clic.</p>
+                    <h3 class="font-bold tracking-tight text-[#07113D] text-xl mb-1">Errores de escritura</h3>
+                    <p class="text-[#1E293B]">Nombres mal escritos o falta de tildes en mensajes oficiales.</p>
                 </div>
             </div>
-            <div class="bg-white p-6 rounded-2xl border border-gray-100 border-l-8 border-yellow-500 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-start gap-4">
+            <div class="bg-white p-6 rounded-2xl border border-[#5FD9CD]/30 border-l-8 border-[#FA8423] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-start gap-4">
                 <div>
-                    <h3 class="font-bold tracking-tight text-navy-900 text-xl mb-1">Ofertas increíbles</h3>
-                    <p class="text-gray-600">Premios de lotería o bonos del gobierno que nunca solicitaste.</p>
+                    <h3 class="font-bold tracking-tight text-[#07113D] text-xl mb-1">Urgencia o miedo</h3>
+                    <p class="text-[#1E293B]">Te dicen que tu cuenta será bloqueada "YA MISMO" si no haces clic.</p>
                 </div>
             </div>
-            <div class="bg-white p-6 rounded-2xl border border-gray-100 border-l-8 border-blue-500 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-start gap-4">
+            <div class="bg-white p-6 rounded-2xl border border-[#5FD9CD]/30 border-l-8 border-[#DE5A1F] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-start gap-4">
                 <div>
-                    <h3 class="font-bold tracking-tight text-navy-900 text-xl mb-1">Errores de escritura</h3>
-                    <p class="text-gray-600">Nombres mal escritos o falta de tildes en mensajes oficiales.</p>
+                    <h3 class="font-bold tracking-tight text-[#07113D] text-xl mb-1">Ofertas increíbles</h3>
+                    <p class="text-[#1E293B]">Premios de lotería o bonos del gobierno que nunca solicitaste.</p>
                 </div>
             </div>
-            <div class="bg-white p-6 rounded-2xl border border-gray-100 border-l-8 border-purple-500 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-start gap-4">
+            <div class="bg-white p-6 rounded-2xl border border-[#5FD9CD]/30 border-l-8 border-[#DE241F] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-start gap-4">
                 <div>
-                    <h3 class="font-bold tracking-tight text-navy-900 text-xl mb-1">Enlaces extraños</h3>
-                    <p class="text-gray-600">Direcciones web que no terminan en el nombre real del banco.</p>
+                    <h3 class="font-bold tracking-tight text-[#07113D] text-xl mb-1">Enlaces extraños</h3>
+                    <p class="text-[#1E293B]">Direcciones web que no terminan en el nombre real del banco.</p>
                 </div>
             </div>
             <div
-                class="bg-white p-6 rounded-2xl border border-gray-100 border-l-8 border-green-500 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-start gap-4 md:col-span-2">
+                class="bg-white p-6 rounded-2xl border border-[#5FD9CD]/30 border-l-8 border-red-900 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-start gap-4 md:col-span-2">
                 <div>
-                    <h3 class="font-bold tracking-tight text-navy-900 text-xl mb-1">Piden tus claves</h3>
-                    <p class="text-gray-600">Ningún banco o empresa real te pedirá tu contraseña por mensaje o llamada.
+                    <h3 class="font-bold tracking-tight text-[#07113D] text-xl mb-1">Piden tus claves</h3>
+                    <p class="text-[#1E293B]">Ningún banco o empresa real te pedirá tu contraseña por mensaje o llamada.
                     </p>
                 </div>
             </div>
         </div>
 
         <!-- Cuadro de Malware -->
-        <div class="bg-red-50 border border-gray-100 border-l-4 border-red-600 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 mb-16">
+        <div class="bg-red-50 border border-[#5FD9CD]/30 border-l-4 border-red-600 p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 mb-16">
             <h3 class="text-2xl font-bold text-red-900 mb-4 flex items-center gap-2">
                 ⚠️ ¡Mucho cuidado con esto!
             </h3>
@@ -140,41 +147,41 @@
         <!-- Botón Continuar -->
         <div class="text-center">
             <a href="ejemplos.html"
-                class="inline-block bg-accent hover:bg-amber-600 text-white text-xl font-bold py-5 px-12 rounded-full shadow-md hover:shadow-lg transition-all transform active:scale-95">
+                class="w-full sm:w-auto bg-[#111F5E] hover:bg-[#07113D] text-white text-xl font-bold py-5 px-10 rounded-lg shadow-md hover:shadow-lg transition-all transform active:scale-95 text-center">
                 Ver ejemplos de estafas reales &rarr;
             </a>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-navy-900 text-white py-12 px-4 mt-16 border-t border-accent/30">
+    <footer class="bg-[#07113D] text-white py-12 px-4 mt-16 border-t border-[#5FD9CD]/30">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-                <h4 class="text-xl font-bold mb-4 italic text-pearl">UPTOS "Clodosbaldo Russián"</h4>
-                <p class="text-gray-400 mb-4">Programa Nacional de Formación (PNF) en Informática</p>
-                <p class="text-gray-400">Cumaná, Estado Sucre, Venezuela | 2025</p>
+                <h4 class="text-xl font-bold mb-4 italic text-[#5FD9CD]">UPTOS "Clodosbaldo Russián"</h4>
+                <p class="text-[#94A3B8] mb-4">Programa Nacional de Formación (PNF) en Informática</p>
+                <p class="text-[#94A3B8]">Cumaná, Estado Sucre, Venezuela | 2025</p>
             </div>
             <div>
-                <h4 class="text-xl font-bold mb-4 italic text-pearl">Equipo de Proyecto</h4>
-                <ul class="text-gray-400 space-y-1">
+                <h4 class="text-xl font-bold mb-4 italic text-[#5FD9CD]">Equipo de Proyecto</h4>
+                <ul class="text-[#94A3B8] space-y-1">
                     <li>Sharon Asaeda</li>
                     <li>Zobeida Nahhas</li>
                     <li>Fabián Aparicio</li>
                     <li>Sair Espín</li>
                 </ul>
-                <p class="mt-6 text-sm text-gray-500">
+                <p class="mt-6 text-sm text-[#64748B]">
                     Proyecto comunitario diseñado para la Urbanización El Bosque.
                 </p>
             </div>
         </div>
-        <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+        <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-[#5FD9CD]/30 text-center text-[#64748B] text-sm">
             &copy; <span id="current-year"></span> Seguridad Digital El Bosque. Información con fines educativos.
         </div>
     </footer>
 
 
     <button id="back-to-top"
-        class="hidden fixed bottom-6 right-6 bg-trust text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center text-2xl z-40">⇑</button>
+        class="hidden fixed bottom-6 right-6 bg-[#3204D9] text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center text-2xl z-40">⇑</button>
 
     <script src="assets/js/main.js"></script>
 </body>

@@ -11,15 +11,19 @@
             theme: {
                 extend: {
                     colors: {
-                        navy: {
-                            800: '#132e35',
-                            900: '#0d1f23',
+                        primary: {
+                            DEFAULT: '#3204D9',
+                            dark: '#090E25',
+                            light: '#5FD9CD',
+                            pale: '#9384FF',
                         },
-                        trust: '#2d4a53',
-                        muted: '#69818d',
-                        pearl: '#afb3b7',
-                        bone: '#F9FAFB',
-                        accent: '#e6a157',
+                        background: '#F7F7F7',
+                        surface: '#FFFFFF',
+                        text: {
+                            primary: '#07113D',
+                            secondary: '#9384FF',
+                        },
+                        alert: '#DC2626',
                     }
                 }
             }
@@ -34,10 +38,10 @@
     </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-[#F7F7F7] text-[#090E25]" style="background-image: linear-gradient(to bottom right, #F7F7F7, rgba(95,217,205,0.08)), radial-gradient(circle at 2px 2px, rgba(95,217,205,0.125) 1px, transparent 1px); background-size: 32px 32px;">
 
     <!-- Navegación Fija -->
-    <nav class="bg-navy-800 text-white sticky top-0 z-50 shadow-lg">
+    <nav class="bg-[#07113D] text-white sticky top-0 z-50 shadow-lg">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="index.html" class="text-xl font-bold flex items-center gap-2">
                 <img src="assets/images/logoBosque.jpg" alt="Logo" class="h-8 w-8">
@@ -48,10 +52,10 @@
             <!-- Menú Desktop -->
             <div class="hidden lg:flex space-x-6 font-medium">
                 <a href="index.html" class="text-white border-b-2 border-white pb-1">Inicio</a>
-                <a href="phishing.html" class="hover:text-pearl transition">¿Qué es?</a>
-                <a href="ejemplos.html" class="hover:text-pearl transition">Ejemplos</a>
-                <a href="prevenir.html" class="hover:text-pearl transition">Cómo prevenir</a>
-                <a href="recursos.html" class="hover:text-pearl transition">Recursos</a>
+                <a href="phishing.html" class="hover:text-[#5FD9CD] transition">¿Qué es?</a>
+                <a href="ejemplos.html" class="hover:text-[#5FD9CD] transition">Ejemplos</a>
+                <a href="prevenir.html" class="hover:text-[#5FD9CD] transition">Cómo prevenir</a>
+                <a href="recursos.html" class="hover:text-[#5FD9CD] transition">Recursos</a>
             </div>
 
             <!-- Botón Hamburguesa -->
@@ -64,28 +68,28 @@
         </div>
 
         <!-- Menú Móvil -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-navy-900 px-4 py-6 space-y-4 border-t border-gray-700">
+        <div id="mobile-menu" class="hidden lg:hidden bg-[#07113D] px-4 py-6 space-y-4 border-t border-[#5FD9CD]/30">
             <a href="index.html" class="block text-lg font-bold text-white">Inicio</a>
-            <a href="phishing.html" class="block text-lg text-gray-300">¿Qué es phishing?</a>
-            <a href="ejemplos.html" class="block text-lg text-gray-300">Ejemplos reales</a>
-            <a href="prevenir.html" class="block text-lg text-gray-300">Pasos para prevenir</a>
-            <a href="recursos.html" class="block text-lg text-gray-300">Recursos útiles</a>
+            <a href="phishing.html" class="block text-lg text-[#64748B]">¿Qué es phishing?</a>
+            <a href="ejemplos.html" class="block text-lg text-[#64748B]">Ejemplos reales</a>
+            <a href="prevenir.html" class="block text-lg text-[#64748B]">Pasos para prevenir</a>
+            <a href="recursos.html" class="block text-lg text-[#64748B]">Recursos útiles</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-gradient-to-br from-white via-gray-50 to-gray-100 border-b border-pearl">
+    <header class="bg-gradient-to-br from-white via-[#F7F7F7] to-[#F7F7F7] border-b border-[#5FD9CD]/30">
         <div class="max-w-6xl mx-auto px-4 py-20 lg:py-28 flex flex-col items-start">
-            <h1 class="text-4xl lg:text-6xl font-bold tracking-tight leading-tight text-navy-900 mb-6">
+            <h1 class="text-4xl lg:text-6xl font-bold tracking-tight leading-tight text-[#07113D] mb-6">
                 Cuida tu seguridad digital: <br>
-                <span class="text-trust">Aprende a identificar y evitar el phishing</span>
+                <span class="text-[#07113D]">Aprende a identificar y evitar el phishing</span>
             </h1>
-            <p class="text-xl lg:text-2xl text-muted mb-8 max-w-3xl">
+            <p class="text-xl lg:text-2xl text-[#1E293B] mb-8 max-w-3xl">
                 Información clara y práctica para los residentes de la
-                <span class="font-bold text-navy-800">Urbanización El Bosque</span>, Cumaná, Estado Sucre.
+                <span class="font-bold text-[#07113D]">Urbanización El Bosque</span>, Cumaná, Estado Sucre.
             </p>
             <a href="phishing.html"
-                class="w-full sm:w-auto bg-accent hover:bg-amber-600 text-white text-xl font-bold py-5 px-10 rounded-lg shadow-md hover:shadow-lg transition-all transform active:scale-95 text-center">
+                class="w-full sm:w-auto bg-[#111F5E] hover:bg-[#07113D] text-white text-xl font-bold py-5 px-10 rounded-lg shadow-md hover:shadow-lg transition-all transform active:scale-95 text-center">
                 Comienza a aprender aquí
             </a>
         </div>
@@ -97,8 +101,8 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Columna de texto -->
                 <div>
-                    <h2 class="text-3xl font-semibold tracking-tight text-navy-900 mb-6">🏘️ Nuestra Comunidad</h2>
-                    <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <h2 class="text-3xl font-semibold tracking-tight text-[#07113D] mb-6">🏘️ Nuestra Comunidad</h2>
+                    <div class="space-y-4 text-[#1E293B] leading-relaxed">
                         <p>
                             La Urbanización El Bosque se encuentra ubicada en el nororiente de la ciudad de Cumaná,
                             específicamente en la parroquia Valentín Valiente del municipio Sucre. Sus límites
@@ -133,9 +137,9 @@
 
     <!-- Sección Introductoria -->
     <main class="max-w-4xl mx-auto px-4 py-16 text-center">
-        <h2 class="text-3xl font-semibold tracking-tight text-navy-900 mb-8">🛡️ ¿Por qué es importante este proyecto?
+        <h2 class="text-3xl font-semibold tracking-tight text-[#07113D] mb-8">🛡️ ¿Por qué es importante este proyecto?
         </h2>
-        <div class="space-y-6 text-lg leading-relaxed text-gray-700">
+        <div class="space-y-6 text-lg leading-relaxed text-[#1E293B]">
             <p>
                 Somos estudiantes de la <strong>Universidad Politécnica Territorial del Oeste de Sucre "Clodosbaldo
                     Russián" (UPTOS)</strong>. Como parte de nuestro proyecto comunitario, queremos ayudarte a navegar
@@ -156,45 +160,39 @@
     <section class="bg-white py-16 px-4">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Card 1 -->
-            <div
-                class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
-                <h3 class="text-2xl font-bold tracking-tight text-navy-900 mb-4">¿Qué es?</h3>
-                <p class="text-gray-600 mb-6 leading-relaxed">Entiende de forma sencilla cómo funcionan estas estafas
-                    digitales que parecen "pescar" tus datos.</p>
-                <a href="phishing.html" class="text-accent hover:text-amber-600 font-medium transition-colors">Saber más
-                    &rarr;</a>
+             <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-trust">
+                <h3 class="text-2xl font-bold text-[#07113D] mb-4">¿Qué es?</h3>
+                <p class="text-[#1E293B] mb-6 leading-relaxed">Entiende de forma sencilla cómo funcionan estas estafas digitales que parecen "pescar" tus datos.</p>
+                <a href="phishing.html" class="text-[#07113D] font-bold hover:underline">Saber más &rarr;</a>
             </div>
+
             <!-- Card 2 -->
-            <div
-                class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
-                <h3 class="text-2xl font-bold tracking-tight text-navy-900 mb-4">Ejemplos Reales</h3>
-                <p class="text-gray-600 mb-6 leading-relaxed">Mira cómo se ven los mensajes falsos de bancos y
-                    familiares que circulan en Venezuela.</p>
-                <a href="ejemplos.html" class="text-accent hover:text-amber-600 font-medium transition-colors">Ver
-                    ejemplos &rarr;</a>
+            <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-trust">
+                <h3 class="text-2xl font-bold text-[#07113D] mb-4">Ejemplos Reales</h3>
+                <p class="text-[#1E293B] mb-6 leading-relaxed">Mira cómo se ven los mensajes falsos de bancos y familiares que circulan en Venezuela.</p>
+                <a href="ejemplos.html" class="text-[#07113D] font-bold hover:underline">Ver ejemplos &rarr;</a>
             </div>
+
             <!-- Card 3 -->
-            <div
-                class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100">
-                <h3 class="text-2xl font-bold tracking-tight text-navy-900 mb-4">Cómo Prevenir</h3>
-                <p class="text-gray-600 mb-6 leading-relaxed">Sigue 7 pasos prácticos para convertirte en un experto en
-                    seguridad digital.</p>
-                <a href="prevenir.html" class="text-accent hover:text-amber-600 font-medium transition-colors">Aprender
-                    pasos &rarr;</a>
+            <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-trust">
+                <h3 class="text-2xl font-bold text-[#07113D] mb-4">Cómo Prevenir</h3>
+                <p class="text-[#1E293B] mb-6 leading-relaxed">Sigue 7 pasos prácticos para convertirte en un experto en seguridad digital.</p>
+                <a href="prevenir.html" class="text-[#07113D] font-bold hover:underline">Aprender pasos &rarr;</a>
             </div>
+
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-navy-900 text-white py-12 px-4 mt-16 border-t border-accent/30">
+    <footer class="bg-[#07113D] text-white py-12 px-4 mt-16 border-t border-[#5FD9CD]/30">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-                <h4 class="text-xl font-bold mb-4 italic text-pearl">UPTOS "Clodosbaldo Russián"</h4>
+                <h4 class="text-xl font-bold mb-4 italic text-[#5FD9CD]">UPTOS "Clodosbaldo Russián"</h4>
                 <p class="text-gray-400 mb-4">Programa Nacional de Formación (PNF) en Informática</p>
                 <p class="text-gray-400">Cumaná, Estado Sucre, Venezuela | 2025</p>
             </div>
             <div>
-                <h4 class="text-xl font-bold mb-4 italic text-pearl">Equipo de Proyecto</h4>
+                <h4 class="text-xl font-bold mb-4 italic text-[#5FD9CD]">Equipo de Proyecto</h4>
                 <ul class="text-gray-400 space-y-1">
                     <li>Sharon Asaeda</li>
                     <li>Zobeida Nahhas</li>
@@ -213,6 +211,10 @@
 
     <!-- Botón Volver Arriba -->
     <button id="back-to-top"
+        class="hidden fixed bottom-6 right-6 bg-[#3204D9] text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center text-2xl transition hover:bg-[#07113D] z-40">
+  <button id="back-to-top"
+        class="hidden fixed bottom-6 right-6 bg-trust text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center text-2xl transition hover:bg-navy-800 z-40">
+  <button id="back-to-top"
         class="hidden fixed bottom-6 right-6 bg-trust text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center text-2xl transition hover:bg-navy-800 z-40">
         ⇑
     </button>

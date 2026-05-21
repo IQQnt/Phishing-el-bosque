@@ -7,21 +7,28 @@
     <title>Recursos Útiles | Seguridad Digital El Bosque</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
+                tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        navy: { 800: '#132e35', 900: '#0d1f23' },
-                        trust: '#2d4a53',
-                        muted: '#69818d',
-                        pearl: '#afb3b7',
-                        bone: '#F9FAFB',
-                        accent: '#e6a157',
+                        primary: {
+                            DEFAULT: '#3204D9',
+                            dark: '#090E25',
+                            light: '#5FD9CD',
+                            pale: '#9384FF',
+                        },
+                        background: '#F7F7F7',
+                        surface: '#FFFFFF',
+                        text: {
+                            primary: '#07113D',
+                            secondary: '#9384FF',
+                        },
+                        alert: '#DC2626',
                     }
                 }
             }
         }
-    </script>
+</script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
@@ -31,10 +38,10 @@
     </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-[#F7F7F7] text-[#090E25]" style="background-image: linear-gradient(to bottom right, #F7F7F7, rgba(95,217,205,0.08)), radial-gradient(circle at 2px 2px, rgba(95,217,205,0.125) 1px, transparent 1px); background-size: 32px 32px;">
 
     <!-- Navegación Fija -->
-    <nav class="bg-navy-800 text-white sticky top-0 z-50 shadow-lg">
+    <nav class="bg-[#07113D] text-white sticky top-0 z-50 shadow-lg">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="index.html" class="text-xl font-bold flex items-center gap-2">
                 <img src="assets/images/logoBosque.jpg" alt="Logo" class="h-8 w-8"> <span
@@ -47,68 +54,68 @@
                 </svg>
             </button>
             <div class="hidden lg:flex space-x-6 font-medium">
-                <a href="index.html" class="hover:text-pearl transition">Inicio</a>
-                <a href="phishing.html" class="hover:text-pearl transition">¿Qué es?</a>
-                <a href="ejemplos.html" class="hover:text-pearl transition">Ejemplos</a>
-                <a href="prevenir.html" class="hover:text-pearl transition">Cómo prevenir</a>
+                <a href="index.html" class="hover:text-[#5E49F2] transition">Inicio</a>
+                <a href="phishing.html" class="hover:text-[#5E49F2] transition">¿Qué es?</a>
+                <a href="ejemplos.html" class="hover:text-[#5E49F2] transition">Ejemplos</a>
+                <a href="prevenir.html" class="hover:text-[#5E49F2] transition">Cómo prevenir</a>
                 <a href="recursos.html" class="text-white border-b-2 border-white pb-1">Recursos</a>
             </div>
         </div>
 
         <!-- Menú Móvil -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-navy-900 px-4 py-6 border-t border-gray-700">
-            <a href="index.html" class="block py-2 text-gray-300">Inicio</a>
-            <a href="phishing.html" class="block py-2 text-gray-300">¿Qué es phishing?</a>
-            <a href="ejemplos.html" class="block py-2 text-gray-300">Ejemplos reales</a>
-            <a href="prevenir.html" class="block py-2 text-gray-300">Pasos para prevenir</a>
+        <div id="mobile-menu" class="hidden lg:hidden bg-[#07113D] px-4 py-6 border-t border-[#5FD9CD]/30">
+            <a href="index.html" class="block py-2 text-[#64748B]">Inicio</a>
+            <a href="phishing.html" class="block py-2 text-[#64748B]">¿Qué es phishing?</a>
+            <a href="ejemplos.html" class="block py-2 text-[#64748B]">Ejemplos reales</a>
+            <a href="prevenir.html" class="block py-2 text-[#64748B]">Pasos para prevenir</a>
             <a href="recursos.html" class="block py-2 text-white font-bold">Recursos útiles</a>
         </div>
     </nav>
 
     <main class="max-w-6xl mx-auto px-4 py-16">
         <header class="mb-16 text-center">
-            <h1 class="text-4xl lg:text-5xl font-bold tracking-tight leading-tight text-navy-900 mb-6">
+            <h1 class="text-4xl lg:text-5xl font-bold tracking-tight leading-tight text-[#07113D] mb-6">
                 🧰 Más herramientas para mantenerte seguro
             </h1>
-            <p class="text-xl text-muted max-w-2xl mx-auto">Aquí encontrarás enlaces oficiales y material que puedes
+            <p class="text-xl text-[#1E293B] max-w-2xl mx-auto">Aquí encontrarás enlaces oficiales y material que puedes
                 descargar y compartir.</p>
         </header>
 
         <!-- Enlaces de Interés -->
         <section class="mb-20">
-            <h2 class="text-3xl font-semibold tracking-tight text-navy-800 mb-8 border-b-2 border-pearl pb-2 inline-block">🔗 Enlaces de
+            <h2 class="text-3xl font-semibold tracking-tight text-[#07113D] mb-8 border-b-2 border-[#5FD9CD]/30 pb-2 inline-block">🔗 Enlaces de
                 interés</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">
-                <article class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-6 border border-gray-100 h-full flex flex-col">
+                <article class="bg-white rounded-2xl shadow-md p-6 border border-[#5FD9CD]/30 h-full flex flex-col">
                     <div class="flex-1">
-                        <h3 class="text-xl font-bold tracking-tight text-navy-900 mb-4">Sudeban – Alertas Bancarias</h3>
-                        <p class="text-gray-600 mb-6">El canal oficial para enterarte de las nuevas modalidades de fraude (phishing, vishing) y proteger tus cuentas.</p>
+                        <h3 class="text-xl font-bold tracking-tight text-[#07113D] mb-4">Sudeban – Alertas Bancarias</h3>
+                        <p class="text-[#1E293B] mb-6">El canal oficial para enterarte de las nuevas modalidades de fraude (phishing, vishing) y proteger tus cuentas.</p>
                     </div>
                     <div class="flex flex-col mt-4">
-                        <a href="https://www.instagram.com/p/DKKMVoLODbZ/" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-4 py-3 rounded-full border border-accent/30 bg-accent/10 text-accent font-semibold hover:bg-accent/20 transition mb-2">Ver alertas en Instagram</a>
-                        <a href="https://www.sudeban.gob.ve" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-4 py-3 rounded-full border border-accent/30 bg-accent/10 text-accent font-semibold hover:bg-accent/20 transition">Visitar Portal Sudeban</a>
+                        <a href="https://www.instagram.com/p/DKKMVoLODbZ/" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-4 py-3 rounded-full border border-[#5FD9CD]/30 bg-[#5FD9CD]/10 text-[#5FD9CD] font-semibold hover:bg-[#3204D9]/20 transition mb-2">Ver alertas en Instagram</a>
+                        <a href="https://www.sudeban.gob.ve" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-4 py-3 rounded-full border border-[#5FD9CD]/30 bg-[#5FD9CD]/10 text-[#5FD9CD] font-semibold hover:bg-[#3204D9]/20 transition">Visitar Portal Sudeban</a>
                     </div>
                 </article>
 
-                <article class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-6 border border-gray-100 h-full flex flex-col">
+                <article class="bg-white rounded-2xl shadow-md p-6 border border-[#5FD9CD]/30 h-full flex flex-col">
                     <div class="flex-1">
-                        <h3 class="text-xl font-bold tracking-tight text-navy-900 mb-4">CICPC – Denuncias y Asesoría</h3>
-                        <p class="text-gray-600 mb-6">Si ya fuiste víctima o buscas asesoría, formula tu denuncia en línea ante el organismo policial especializado.</p>
+                        <h3 class="text-xl font-bold tracking-tight text-[#07113D] mb-4">CICPC – Denuncias y Asesoría</h3>
+                        <p class="text-[#1E293B] mb-6">Si ya fuiste víctima o buscas asesoría, formula tu denuncia en línea ante el organismo policial especializado.</p>
                     </div>
                     <div class="flex flex-col mt-4">
-                        <a href="https://www.lazarus.com.ve/division-de-delitos-informaticos-del-cicpc/" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-4 py-3 rounded-full border border-accent/30 bg-accent/10 text-accent font-semibold hover:bg-accent/20 transition mb-2">Formular Denuncia o Asesoría</a>
-                        <a href="https://www.instagram.com/reel/CgvLn8Tjscn/" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-4 py-3 rounded-full border border-accent/30 bg-accent/10 text-accent font-semibold hover:bg-accent/20 transition">Ver anuncio oficial</a>
+                        <a href="https://www.lazarus.com.ve/division-de-delitos-informaticos-del-cicpc/" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-4 py-3 rounded-full border border-[#5FD9CD]/30 bg-[#5FD9CD]/10 text-[#5FD9CD] font-semibold hover:bg-[#3204D9]/20 transition mb-2">Formular Denuncia o Asesoría</a>
+                        <a href="https://www.instagram.com/reel/CgvLn8Tjscn/" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-4 py-3 rounded-full border border-[#5FD9CD]/30 bg-[#5FD9CD]/10 text-[#5FD9CD] font-semibold hover:bg-[#3204D9]/20 transition">Ver anuncio oficial</a>
                     </div>
                 </article>
 
-                <article class="bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 p-6 border border-gray-100 h-full flex flex-col">
+                <article class="bg-white rounded-2xl shadow-md p-6 border border-[#5FD9CD]/30 h-full flex flex-col">
                     <div class="flex-1">
-                        <h3 class="text-xl font-bold tracking-tight text-navy-900 mb-4">Conexión Segura</h3>
-                        <p class="text-gray-600 mb-6">Iniciativa venezolana con videos tutoriales cortos y lenguaje sencillo para entender la seguridad digital.</p>
+                        <h3 class="text-xl font-bold tracking-tight text-[#07113D] mb-4">Conexión Segura</h3>
+                        <p class="text-[#1E293B] mb-6">Iniciativa venezolana con videos tutoriales cortos y lenguaje sencillo para entender la seguridad digital.</p>
                     </div>
                     <div class="flex flex-col mt-4">
-                        <a href="https://conexionsegura.org/about.html" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-4 py-3 rounded-full border border-accent/30 bg-accent/10 text-accent font-semibold hover:bg-accent/20 transition mb-2">Conocer la iniciativa</a>
-                        <a href="https://www.youtube.com/channel/UCzN2SuKrqhsc2bKyGFg0Jpg" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-4 py-3 rounded-full border border-accent/30 bg-accent/10 text-accent font-semibold hover:bg-accent/20 transition">Ver tutoriales en YouTube</a>
+                        <a href="https://conexionsegura.org/about.html" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-4 py-3 rounded-full border border-[#5FD9CD]/30 bg-[#5FD9CD]/10 text-[#5FD9CD] font-semibold hover:bg-[#3204D9]/20 transition mb-2">Conocer la iniciativa</a>
+                        <a href="https://www.youtube.com/channel/UCzN2SuKrqhsc2bKyGFg0Jpg" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-4 py-3 rounded-full border border-[#5FD9CD]/30 bg-[#5FD9CD]/10 text-[#5FD9CD] font-semibold hover:bg-[#3204D9]/20 transition">Ver tutoriales en YouTube</a>
                     </div>
                 </article>
             </div>
@@ -116,54 +123,54 @@
 
         <!-- Materiales Descargables -->
         <section class="mb-20">
-            <h2 class="text-3xl font-semibold tracking-tight text-navy-800 mb-8 border-b-2 border-pearl pb-2 inline-block">📤 Materiales
+            <h2 class="text-3xl font-semibold tracking-tight text-[#07113D] mb-8 border-b-2 border-[#5FD9CD]/30 pb-2 inline-block">📤 Materiales
                 para compartir</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
 
                 <!-- Tarjeta 1 -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-[#5FD9CD]/30 flex flex-col">
                     <img src="downloads/infografia-anzuelo.png" alt="Infografía: El anzuelo que no ves"
                         class="w-full aspect-video object-cover bg-gray-200">
 
                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="font-bold tracking-tight text-navy-900 text-lg mb-2">Infografía: El anzuelo que no ves</h3>
-                        <p class="text-gray-600 text-sm mb-6 flex-grow">Descubre cómo piensa un estafador y por qué
+                        <h3 class="font-bold tracking-tight text-[#07113D] text-lg mb-2">Infografía: El anzuelo que no ves</h3>
+                        <p class="text-[#64748B] text-sm mb-6 flex-grow">Descubre cómo piensa un estafador y por qué
                             cualquiera puede ser víctima.</p>
                         <a href="downloads/infografia-anzuelo.png" download="infografia-anzuelo.png"
-                            class="w-full bg-trust hover:bg-navy-800 text-white text-center font-bold py-3 rounded-lg shadow-sm hover:shadow transition-all">
+                            class="w-full bg-[#111F5E] hover:bg-[#07113D] text-white text-center font-bold py-3 rounded-lg shadow-sm hover:shadow transition-all">
                             Descargar PNG
                         </a>
                     </div>
                 </div>
 
                 <!-- Tarjeta 2 -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-[#5FD9CD]/30 flex flex-col">
                     <img src="downloads/infografia-minuto.png" alt="Infografía: El minuto que salva tus cuentas"
                         class="w-full aspect-video object-cover bg-gray-200">
 
                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="font-bold tracking-tight text-navy-900 text-lg mb-2">Infografía: El minuto que salva tus cuentas
+                        <h3 class="font-bold tracking-tight text-[#07113D] text-lg mb-2">Infografía: El minuto que salva tus cuentas
                         </h3>
-                        <p class="text-gray-600 text-sm mb-6 flex-grow">Los pasos urgentes que debes seguir justo
+                        <p class="text-[#64748B] text-sm mb-6 flex-grow">Los pasos urgentes que debes seguir justo
                             después de caer en un engaño.</p>
                         <a href="downloads/infografia-minuto.png" download="infografia-minuto.png"
-                            class="w-full bg-trust hover:bg-navy-800 text-white text-center font-bold py-3 rounded-lg shadow-sm hover:shadow transition-all">
+                            class="w-full bg-[#111F5E] hover:bg-[#07113D] text-white text-center font-bold py-3 rounded-lg shadow-sm hover:shadow transition-all">
                             Descargar PNG
                         </a>
                     </div>
                 </div>
 
                 <!-- Tarjeta 3 -->
-                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 flex flex-col">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-[#5FD9CD]/30 flex flex-col">
                     <img src="downloads/infografia-navegar.png" alt="Infografía: Navega sin miedo"
                         class="w-full aspect-video object-cover bg-gray-200">
 
                     <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="font-bold tracking-tight text-navy-900 text-lg mb-2">Infografía: Navega sin miedo</h3>
-                        <p class="text-gray-600 text-sm mb-6 flex-grow">Consejos prácticos para una navegación segura en
+                        <h3 class="font-bold tracking-tight text-[#07113D] text-lg mb-2">Infografía: Navega sin miedo</h3>
+                        <p class="text-[#64748B] text-sm mb-6 flex-grow">Consejos prácticos para una navegación segura en
                             internet.</p>
                         <a href="downloads/infografia-navegar.png" download="infografia-navegar.png"
-                            class="w-full bg-trust hover:bg-navy-800 text-white text-center font-bold py-3 rounded-lg shadow-sm hover:shadow transition-all">
+                            class="w-full bg-[#111F5E] hover:bg-[#07113D] text-white text-center font-bold py-3 rounded-lg shadow-sm hover:shadow transition-all">
                             Descargar PNG
                         </a>
                     </div>
@@ -173,52 +180,52 @@
 
             <!-- Mensaje Adicional -->
             <div class="mt-8 text-center">
-                <p class="text-muted text-sm italic">
-                    💡 Las infografías están en formato PNG. Puedes imprimirlas, compartirlas por WhatsApp o guardarlas
+                <p class="text-[#64748B] text-sm italic">
+                    Las infografías están en formato PNG. Puedes imprimirlas, compartirlas por WhatsApp o guardarlas
                     en tu teléfono.
                 </p>
             </div>
         </section>
 
         <!-- Mensaje Final -->
-        <div class="bg-white border-4 border-dashed border-pearl p-12 rounded-3xl text-center">
-            <p class="text-2xl text-navy-800 font-bold italic mb-4">
-                "Próximamente más recursos. ¡Comparte esta página con tu familia y vecinos!"
+        <div class="bg-white border-4 border-dashed border-[#5FD9CD]/30 p-12 rounded-3xl text-center">
+            <p class="text-2xl text-[#07113D] font-bold italic mb-4">
+                💡 ¡Comparte esta página con tu familia y vecinos!
             </p>
-            <p class="text-muted">Juntos podemos hacer de la Urbanización El Bosque un lugar digital más seguro.</p>
+            <p class="text-[#1E293B]">Juntos podemos hacer de la Urbanización El Bosque un lugar digital más seguro.</p>
         </div>
 
     </main>
 
     <!-- Footer -->
-    <footer class="bg-navy-900 text-white py-12 px-4 mt-16 border-t border-accent/30">
+    <footer class="bg-[#07113D] text-white py-12 px-4 mt-16 border-t border-[#5FD9CD]/30">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-                <h4 class="text-xl font-bold mb-4 italic text-pearl">UPTOS "Clodosbaldo Russián"</h4>
-                <p class="text-gray-400 mb-4">Programa Nacional de Formación (PNF) en Informática</p>
-                <p class="text-gray-400">Cumaná, Estado Sucre, Venezuela | 2025</p>
+                <h4 class="text-xl font-bold mb-4 italic text-[#5FD9CD]">UPTOS "Clodosbaldo Russián"</h4>
+                <p class="text-[#94A3B8] mb-4">Programa Nacional de Formación (PNF) en Informática</p>
+                <p class="text-[#94A3B8]">Cumaná, Estado Sucre, Venezuela | 2025</p>
             </div>
             <div>
-                <h4 class="text-xl font-bold mb-4 italic text-pearl">Equipo de Proyecto</h4>
-                <ul class="text-gray-400 space-y-1">
+                <h4 class="text-xl font-bold mb-4 italic text-[#5FD9CD]">Equipo de Proyecto</h4>
+                <ul class="text-[#94A3B8] space-y-1">
                     <li>Sharon Asaeda</li>
                     <li>Zobeida Nahhas</li>
                     <li>Fabián Aparicio</li>
                     <li>Sair Espín</li>
                 </ul>
-                <p class="mt-6 text-sm text-gray-500">
+                <p class="mt-6 text-sm text-[#64748B]">
                     Proyecto comunitario diseñado para la Urbanización El Bosque.
                 </p>
             </div>
         </div>
-        <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+        <div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-[#5FD9CD]/30 text-center text-[#64748B] text-sm">
             &copy; <span id="current-year"></span> Seguridad Digital El Bosque. Información con fines educativos.
         </div>
     </footer>
 
 
     <button id="back-to-top"
-        class="hidden fixed bottom-6 right-6 bg-trust text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center text-2xl z-40">⇑</button>
+        class="hidden fixed bottom-6 right-6 bg-[#3204D9] text-white w-12 h-12 rounded-full shadow-2xl items-center justify-center text-2xl z-40">⇑</button>
 
     <script src="assets/js/main.js"></script>
 </body>
