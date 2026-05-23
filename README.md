@@ -4,7 +4,7 @@ Página web educativa para la prevención del phishing, desarrollada como proyec
 
 **Autores:** Sharon Asaeda, Zobeida Nahhas, Fabián Aparicio, Sair Espín  
 **Institución:** UPTOS "Clodosbaldo Russián" - PNF en Informática  
-**Año:** 2025
+**Año:** 2026
 
 ---
 
@@ -64,4 +64,4 @@ Para dudas o reportar problemas, comunicarse con la Junta de Vecinos de la Urban
 
 ---
 
-**Última actualización:** 2025
+**Última actualización:** 2026
